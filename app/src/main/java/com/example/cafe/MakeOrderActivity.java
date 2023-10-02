@@ -68,13 +68,13 @@ public class MakeOrderActivity extends AppCompatActivity {
 
     private void onUserMadeOrder() {
         ArrayList<String> additives = new ArrayList<>();
-        if (checkBoxSugar.isActivated()) {
+        if (checkBoxSugar.isChecked()) {
             additives.add(checkBoxSugar.getText().toString());
         }
-        if (checkBoxMilk.isActivated()) {
+        if (checkBoxMilk.isChecked()) {
             additives.add(checkBoxMilk.getText().toString());
         }
-        if (radioButtonTea.isChecked() && checkBoxLemon.isActivated()) {
+        if (radioButtonTea.isChecked() && checkBoxLemon.isChecked()) {
             additives.add(checkBoxLemon.getText().toString());
         }
 
